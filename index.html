@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Encriptador de Texto</title>
+        
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>            
+        </header>      
+        
+        <main>
+            <div class="area-texto">
+                <textarea class="area-texto__textarea" placeholder="Ingrese el texto aquí."></textarea>
+            </div>
+
+            <div class="texto-encriptado">
+
+                <textarea readonly class="texto-encriptado__area-texto"></textarea>
+                <div class="texto-encriptado__mensaje">
+                    <p class="texto-encriptado__mensaje-p" id="remove">Ningún mensaje fue encontrado</p>
+                    <p class="texto-encriptado__mensaje-p"></p>
+                </div>
+                <button class="texto-encriptado__boton" onclick="copiar()">Copiar</button>
+            </div>
+
+            <div class="advertencia">
+                <img src="imagenes/Group.png" class="advertencia__img">
+                <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+
+            <div class="botones">
+                <button class="botones__button" onclick="btnEncriptar()">Encriptar</button>
+                <button class="botones__button" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </main>       
+       
+        <script src="script.js"></script>
+    </body>
+</html>
+
